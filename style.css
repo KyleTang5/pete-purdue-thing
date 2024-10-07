@@ -1,0 +1,45 @@
+@keyframes slide {
+
+    from { left: 0; }
+    to {left: 80%; }
+
+    from {top: 0;}
+    to { top: 30%;}
+    }
+    
+    .sliding_text {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    top: 0;
+    animation-duration: 12s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    background-color: goldenrod;
+    border: 2px solid black;
+    }
+    
+    @keyframes moving {
+        0%   {background-color: goldenrod; left: 10%; top: 10%;}
+        20%  {background-color: black; left: 20%; top: 20%;}
+        40%  {background-color: goldenrod; left: 40%; top: 40%;}
+        60%  {background-color: black; left: 60%; top: 60%;}
+        80% {background-color: goldenrod; left: 80%; top: 80%;}
+        100% {background-color: black; left: 0px; top: 0px;}
+    }
+       .moving_purdueman {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        background-image:url(purduepeteanvil.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation-duration: 4s;
+        animation-name: moving;
+        animation-iteration-count: infinite;
+        }
+        h1 {
+            text-align: center;
+            font-size: 15px;
+        }
